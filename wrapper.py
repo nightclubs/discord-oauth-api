@@ -31,9 +31,9 @@ class api:
      return r
     
     
-def get_userinfo(token):
-    headers = {
+    def get_userinfo(token):
+     headers = {
         "Authorization" : f"Bearer {token}"
-    }
-    r = requests.get(f"https://discord.com/api/users/@me", headers = headers)
-    return r.json()
+     }
+     r = requests.get(f"https://discord.com/api/users/@me", headers = headers)
+     return r.json()
